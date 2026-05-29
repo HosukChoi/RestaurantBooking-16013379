@@ -1,0 +1,16 @@
+#include <iostream>
+#include "../src/sms_sender.cpp"
+
+class TestableSmsSender : public SmsSender {
+public:
+	MOCK_METHOD(void, send, (Schedule*), (override));
+	//	void send(Schedule* schedule) override {
+	//		std::cout << "테스트용 SmsSender class의 send 메서드 실행됨\n";
+	//		sendMethodIsCalled = true;
+	//	}
+	//	bool issendMethodIsCalled() {
+	//		return sendMethodIsCalled;
+	//	}
+	//private:
+	//	bool sendMethodIsCalled;
+};
