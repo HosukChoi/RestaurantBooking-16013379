@@ -147,10 +147,14 @@
     <ClCompile Include="src\mail_sender.cpp" />
     <ClCompile Include="src\schedule.cpp" />
     <ClCompile Include="src\sms_sender.cpp" />
+    <ClCompile Include="test\monday_booking_scheduler.cpp" />
+    <ClCompile Include="test\sunday_booking_scheduler.cpp" />
     <ClCompile Include="test\test.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="test\testable_booking_scheduler.cpp" />
+    <ClCompile Include="test\testable_mail_sender.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
